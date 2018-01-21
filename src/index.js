@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 let appRunner = require('./app-runner');
 
 try {
