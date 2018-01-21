@@ -1,5 +1,5 @@
 {
-  "name": "jit",
+  "name": "@saip106/jit",
   "version": "0.0.1",
   "description": "node implementation of git",
   "main": "src/index.js",
