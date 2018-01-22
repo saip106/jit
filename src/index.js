@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-let appRunner = require('./app-runner');
+let cli = require('./cli');
 
 try {
-    appRunner.run();    
+    cli.run();    
 } catch (error) {
     console.log(error.message);
 }
