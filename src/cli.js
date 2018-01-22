@@ -2,9 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const yargs = require('yargs');
 
-module.exports = {
-
-    run: function() {
+exports.run = function() {
         var cliArguments = yargs.argv._;
         if (cliArguments.includes('init')) {
             yargs
@@ -17,5 +15,4 @@ module.exports = {
             throw new Error('Not a jit repo');
         }
     }
-}
 
