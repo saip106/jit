@@ -1,10 +1,10 @@
-exports.command = 'init [dir]'
-exports.desc = 'Create an empty repo'
-exports.builder = {
-  dir: {
-    default: '.'
-  }
-}
+const fs = require('fs');
+
+exports.command = 'init'
+exports.desc = 'Initialize jit repo'
+exports.builder = {}
 exports.handler = function (argv) {
-  console.log('init called for dir', argv.dir)
+	fs.mkdir('.jit', () => {
+        console.log('Initialized jit repo');
+    });
 }
